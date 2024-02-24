@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anta:ital,wght@0,400;0,900;1,700&display=swap");
 
 /* Variables */
 :root {
@@ -46,10 +47,15 @@ a {
   text-decoration: none;
   color: var(--primary-color);
 }
-
+.herotext h1{
+  -webkit-text-stroke: 0.6 var(--secondary-color);
+  text-shadow: 2px 2px 4px #355373;
+  font-family: 'Japanese 3017', sans-serif;
+  color: #fff;
+}
 
 a:hover {
-  color: var(--secondary-color);
+  color: white;
 }
 
 body {
@@ -86,7 +92,7 @@ nav a {
   transition: var(--transition);
 }
 nav a:hover {
-  color: var(--secondary-color);
+
   border-bottom: 2px solid var(--secondary-color);
 }
 
@@ -112,18 +118,35 @@ nav ul li {
 /* Hero section */
 .hero {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 5%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 3%;
   width: 100%;
   margin: auto;
+  background-image: url('../images/lowopacibg3.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-attachment: fixed;
+  backdrop-filter: opacity(20%);
 }
+.heroimg{
+  width: 30%;
+  
 
+}
 .hero-img {
   transform: rotateY(180deg);
-  width: 40%;
+  width: 100%;
+}
+.herotext{
+margin-top:10% ;
+}
+
+.herotext h1{
+  font-size: 6rem;
+}
+.herotext p{
+  color: white;
 }
 @keyframes float {
   0% {
@@ -142,7 +165,8 @@ nav ul li {
 
 .bio {
   animation: float 6s ease-in-out infinite;
-  width: 49%;
+  width: 30%;
+  height: 200px;
   background-color: #355373;
   color: var(--bg-color);
   padding: 0.625rem;
@@ -162,7 +186,7 @@ nav ul li {
 
 /* More about */
 .more-about {
-  background-color:  #d3e4f678;
+  
   padding: 1rem 6rem;
 }
 
@@ -179,15 +203,21 @@ nav ul li {
 
 /* Skills section */
 .skills {
-  max-width: 68.75rem;
+  max-width:100vw;
   margin: auto;
   text-align: center;
   margin-top: 2.5rem;
+  background-image: url('../images/lowopacibg2.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  /* background-color: #f9fafa4e; */
   
 }
 
 .skill-header {
   margin-bottom: 1rem;
+  font-size: 3rem;
 }
 .resume{
   padding: 5px 10px 5px 10px;
@@ -201,13 +231,24 @@ nav ul li {
 }
 .skills-wrapper{
   padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .skills-wrapper img {
   padding: 1.25rem;
 }
+
+.first-set{
+border-top: 1px solid #355373;
+border-right: 1px solid #355373;
+}
+
 .second-set {
-  margin-top: 5%;
+  border-bottom: 1px solid #355373;
+}
+
+.properties {
 
 }
 
@@ -225,7 +266,9 @@ nav ul li {
 
 /* Projects section */
 .projects {
-  background-color: var(--bg-color);
+  background-image: linear-gradient(transparent, #35537378, transparent );
+  /* background-color: #35537378; */
+
   padding: 32px 0;
   margin-top: 2rem;
 }
@@ -478,18 +521,4 @@ footer {
   .contact-form-container {
     max-width: 17.75rem;
   }
-}
-.floating { 
-	animation-name: floating;
-	animation-duration: 3s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
-	margin-left: 30px;
-	margin-top: 5px;
-}
-
-@keyframes floating {
-	0% { transform: translate(0, 0px); }
-	50% { transform: translate(0, 15px); }
-	100% { transform: translate(0, -0px); } 
 }
