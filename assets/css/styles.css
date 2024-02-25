@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anta:ital,wght@0,400;0,900;1,700&display=swap");
+@font-face {
+  font-family: 'japanese';
+  src: url('Japanese\ 3017.otf');
+}
 
 /* Variables */
 :root {
@@ -50,7 +54,7 @@ a {
 .herotext h1{
   -webkit-text-stroke: 0.6 var(--secondary-color);
   text-shadow: 2px 2px 4px #355373;
-  font-family: 'Japanese 3017', sans-serif;
+  font-family: 'japanese';
   color: #fff;
 }
 
