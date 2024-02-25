@@ -54,7 +54,7 @@ a {
 .herotext h1{
   -webkit-text-stroke: 0.6 var(--secondary-color);
   text-shadow: 2px 2px 4px #355373;
-  font-family: 'japanese';
+  font-family: 'japanese', sans-serif;
   color: #fff;
 }
 
