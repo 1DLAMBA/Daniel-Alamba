@@ -144,6 +144,7 @@
         <img src="assets/icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card" />
         <img src="assets/icons/icons8-php-480.png" alt="" loading="lazy" class="icon icon-card" />
         <img src="assets/icons/Python.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/Java.svg" alt="" loading="lazy" class="icon icon-card" />
 
       </div>
 
@@ -153,6 +154,7 @@
         <h1 class="skill-header">Frameworks</h1>
         <img src="assets/icons/laravel.png" alt="" loading="lazy" class="icon icon-card" />
         <img src="assets/icons/icons8-angularjs.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-react-native.svg" alt="" loading="lazy" class="icon icon-card" />
         <img src="assets/images/icons8-django-a-high-level-python-web-framework-that-encourages-rapid-development-96.png" alt="" loading="lazy" class="icon icon-card" /><br>
       </div>
 
@@ -160,7 +162,7 @@
     <div class=" ">
 
      <h1 class="">Technologies</h1>
-     <img src="assets/icons/icons8-capacitor-symbol-96.png" alt="" loading="lazy" class="icon icon-card" />
+     <img src="assets/icons/icons8-expo.svg" alt="" loading="lazy" class="icon icon-card" />
      <img src="assets/icons/icons8-git-480.png" alt="" loading="lazy" class="icon icon-card" />
      <img src="assets/icons/icons8-github-240.png" alt="" loading="lazy" class="icon icon-card" /><br>
    </div>
@@ -173,6 +175,23 @@
     
     <div class="projects-container">
   
+        <!-- A and B CLEANER -->
+    <div class="project-container project-card">
+      <img src="assets/images/advertView.png" alt="Abrab" loading="lazy" class="project-pic" />
+      
+      <div id="myNav9" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav9()">&times;</a>
+        <div class="overlay-content">
+          <img src="assets/images/Screenshot (127).png" width="100%" height="100%" /><br>
+          <img src="assets/images/Screenshot (129).png" width="100%" height="100%" />
+          <img src="assets/images/Screenshot (131).png" width="100%" height="100%" />
+        </div>
+      </div>
+      <h3 class="project-title">A and B Janitorial Service Canada</h3>
+      <span style="cursor: pointer;" onclick="openNav9()">
+        <a target="" class="project-link bi-eye">&nbsp;Check it Out</a></span><br>
+      </div>
+
         <!-- Phoenix -->
     <div class="project-container project-card">
       <img src="assets/images/phoenixframe.png" alt="Abrab" loading="lazy" class="project-pic" />
@@ -368,6 +387,13 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script>
+    function openNav9() {
+      document.getElementById("myNav9").style.width = "100%";
+    }
+
+    function closeNav9() {
+      document.getElementById("myNav9").style.width = "0%";
+    }
     function openNav8() {
       document.getElementById("myNav8").style.width = "100%";
     }
